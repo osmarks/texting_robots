@@ -312,6 +312,7 @@ pub fn get_robots_url(url: &str) -> Result<String, ParseError> {
 }
 
 #[allow(dead_code)]
+#[derive(Clone, Debug)]
 pub struct Robot {
     // Rules are stored in the form of (regex rule, allow/disallow)
     // where the regex rule is ordered by original pattern length
